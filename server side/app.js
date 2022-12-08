@@ -6,7 +6,7 @@ const app = express();
 app.use(express.json());
 
 mongoose
-    .connect('mongodb+srv://adarsh_dy:Zn2OMHllnjiUVtoq@cluster0.znxnsco.mongodb.net/?retryWrites=true&w=majority')
+    .connect('#')
     .then(() => app.listen(3000))
     .then(() => console.log('Database Connected!'))
 
